@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const submitForm = document.getElementById('inputBook');
   submitForm.addEventListener('submit', function (event) {
       event.preventDefault();
-      makeBook();
+      inputBook();
   });
   if (isStorageExist()) {
       loadDataFromStorage();
@@ -211,10 +211,10 @@ document.getElementById('searchBook').addEventListener("submit", function (event
   const bookList = document.querySelectorAll('.container > h3');
   for (book of bookList) {
     if (book.innerText.toLowerCase().includes(searchBook)) {
-  book.parentElement.style.display = "none";
+  book.parentElement.parentElement.style.display = "block";
   } 
   else {
-  book.parentElement.style.display = "block";
+  book.parentElement.parentElement.style.display = "none";
   }
   }
   })
