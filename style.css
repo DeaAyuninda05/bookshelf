@@ -160,12 +160,12 @@ main {
     cursor: pointer;
 }
 
-.green {
+.Green {
     background-color: darkgreen;
     color: white;
 }
 
-.red {
+.Red {
     background-color: darkred;
     color: white;
 }
