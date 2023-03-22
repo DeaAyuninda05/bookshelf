@@ -7,9 +7,12 @@ const SAVED_EVENT = "saved-book";
 document.addEventListener('DOMContentLoaded', function () {
   const submitForm = document.getElementById('inputBook');
   submitForm.addEventListener('submit', function (event) {
-    event.preventDefault();
-    inputBook();
+      event.preventDefault();
+      makeBook();
   });
+  if (isStorageExist()) {
+      loadDataFromStorage();
+  }
 });
 
 function isStorageExist() {
