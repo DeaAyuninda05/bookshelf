@@ -35,6 +35,7 @@ main {
     padding: 16px;
     border: 1px solid black;
     border-radius: 10px;
+    
 }
 
 .input_section > h2 {
@@ -124,6 +125,10 @@ main {
     border: 0;
     border-radius: 5px;
     cursor: pointer;
+    
+}
+.search_section > form > button:hover {
+    background-color: #BCaaa4;
 }
 
 .book_shelf {
