@@ -204,3 +204,17 @@ completeBookshelfList.innerHTML = '';
 
 const INCOMPLETED_LIST_BOOK_ID = 'incompleteBookshelfList';
 const COMPLETED_LIST_BOOK_ID = 'completeBookshelfList';
+
+document.getElementById('searchBook').addEventListener("submit", function (event){
+  event.preventDefault();
+  const searchBook = document.getElementById('searchBook').value.toLowerCase();
+  const bookList = document.querySelectorAll('.book_shelf > h3');
+  for (makeBook of bookList) {
+    if (buku.innerText.toLowerCase().includes(searchBook)) {
+  buku.parentElement.style.display = "none";
+  } 
+  else {
+  buku.parentElement.style.display = "block";
+  }
+  }
+  })
