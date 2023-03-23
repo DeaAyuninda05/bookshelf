@@ -72,6 +72,7 @@ function generateBookObject(id, title, author, year, isCompleted) {
   }
 }
 document.addEventListener(RENDER_EVENT, function (){
+  console.log(bookSubmit);
 });
 
 function makeBook(book_shelf) {
